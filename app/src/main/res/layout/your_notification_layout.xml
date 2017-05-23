@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mywhite2">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/yourNotificationToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rippleView"
+        rv_centered="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBarLayout"
+        app:rv_color="@color/grey_400"
+        app:rv_type="rectangle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/mywhite2">
+
+            <TextView
+                android:id="@+id/yourNotificationTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:padding="4dp"
+                android:text="Sound"
+                android:textColor="@color/mytext"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/yourNotificationSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/yourNotificationTextView1"
+                android:layout_marginBottom="14dp"
+                android:layout_marginRight="1dp"
+                android:checked="true"
+                android:padding="10dp"
+                android:theme="@style/SCBSwitch" />
+
+            <TextView
+                android:id="@+id/yourNotificationTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="38dp"
+                android:paddingLeft="4dp"
+                android:paddingTop="0dp"
+                android:textColor="@color/mysubtext"
+                android:text="Play a sound when a message is recieved"
+                android:textSize="12sp"
+                android:layout_alignLeft="@+id/yourNotificationTextView1"
+                android:layout_alignStart="@+id/yourNotificationTextView1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".4dp"
+                android:layout_below="@+id/yourNotificationTextView2"
+                android:background="#C8C8C8" />
+        </RelativeLayout>
+
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rippleView2"
+        rv_centered="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rippleView"
+        app:rv_color="@color/grey_400"
+        app:rv_type="rectangle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/mywhite2">
+
+            <TextView
+                android:id="@+id/yourNotificationTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:padding="4dp"
+                android:text="Vibration"
+                android:textColor="@color/mytext"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/yourNotificationSwitch2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/yourNotificationTextView3"
+                android:layout_marginBottom="14dp"
+                android:layout_marginRight="1dp"
+                android:checked="true"
+                android:padding="10dp"
+                android:theme="@style/SCBSwitch" />
+
+            <TextView
+                android:id="@+id/yourNotificationTextView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="38dp"
+                android:paddingLeft="4dp"
+                android:textColor="@color/mysubtext"
+                android:paddingTop="0dp"
+                android:text="Vibrate when a new message is recieved"
+                android:textSize="12sp"
+                android:layout_alignLeft="@+id/yourNotificationTextView3"
+                android:layout_alignStart="@+id/yourNotificationTextView3" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".4dp"
+                android:layout_below="@+id/yourNotificationTextView4"
+                android:background="#C8C8C8" />
+        </RelativeLayout>
+
+    </com.andexert.library.RippleView>
+
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rippleView3"
+        rv_centered="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rippleView2"
+        app:rv_color="@color/grey_400"
+        app:rv_type="rectangle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/mywhite2">
+
+            <TextView
+                android:id="@+id/yourNotificationTextView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:padding="4dp"
+                android:text="LED Color"
+                android:textColor="@color/mytext"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/yourNotificationTextView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="38dp"
+                android:paddingLeft="4dp"
+                android:paddingTop="0dp"
+                android:textColor="@color/mysubtext"
+                android:text="Change LED color, only supported by phone will work"
+                android:textSize="12sp"
+                android:layout_alignLeft="@+id/yourNotificationTextView5"
+                android:layout_alignStart="@+id/yourNotificationTextView5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".4dp"
+                android:layout_below="@+id/yourNotificationTextView6"
+                android:background="#C8C8C8" />
+        </RelativeLayout>
+
+    </com.andexert.library.RippleView>
+
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rippleView4"
+        rv_centered="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rippleView3"
+        app:rv_color="@color/grey_400"
+        app:rv_type="rectangle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/mywhite2">
+
+            <TextView
+                android:id="@+id/yourNotificationTextView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:padding="4dp"
+                android:text="Mute New Chats"
+                android:textColor="@color/mytext"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/yourNotificationSwitch4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/yourNotificationTextView7"
+                android:layout_marginBottom="14dp"
+                android:layout_marginRight="1dp"
+                android:checked="true"
+                android:padding="10dp"
+                android:theme="@style/SCBSwitch" />
+
+            <TextView
+                android:id="@+id/yourNotificationTextView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="38dp"
+                android:paddingLeft="4dp"
+                android:paddingTop="0dp"
+                android:textColor="@color/mysubtext"
+                android:text="Disable notifications for all new chats"
+                android:textSize="12sp"
+                android:layout_alignLeft="@+id/yourNotificationTextView7"
+                android:layout_alignStart="@+id/yourNotificationTextView7" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".4dp"
+                android:layout_below="@+id/yourNotificationTextView8"
+                android:background="#C8C8C8" />
+        </RelativeLayout>
+
+    </com.andexert.library.RippleView>
+
+
+</RelativeLayout>

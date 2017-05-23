@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Let\'s Chat</string>
+    <string name="app_title">The fastest chatting application</string>
+    <string name="error_weak_password">Weak password</string>
+    <string name="error_invalid_email">Invalid email</string>
+    <string name="error_email_exist">Email already exist</string>
+    <string name="error_username_shorter">Please use between 6 and 30 characters</string>
+</resources>

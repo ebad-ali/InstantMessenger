@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="innovate.ebad.com.instantmessenger">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".Application.App"
+        android:allowBackup="true"
+        android:icon="@drawable/telegram3"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/telegram3"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.samsung.android.icon_container.has_icon_container"
+            android:value="true" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:parentActivityName=".GetStartedActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".GetStartedActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".RegisterProfile"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".GetStartedActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".MainMessageActivity" />
+
+        <activity
+            android:name=".ProfileSettingActivity"
+            android:parentActivityName=".MainMessageActivity" />
+        <activity
+            android:name=".OptionActivities.YourAccount"
+            android:parentActivityName=".ProfileSettingActivity" />
+        <activity
+            android:name=".OptionActivities.YourNotification"
+            android:parentActivityName=".ProfileSettingActivity" />
+        <activity
+            android:name=".OptionActivities.YourChatSetting"
+            android:parentActivityName=".ProfileSettingActivity" />
+
+
+        <activity
+            android:name=".SearchActivity"
+            android:parentActivityName=".ProfileSettingActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize">
+
+        </activity>
+
+        <activity
+            android:name=".UsernameResultProfile"
+            android:parentActivityName=".ProfileSettingActivity" />
+
+        <activity
+            android:name=".MainChatActivity"
+            android:parentActivityName=".MainMessageActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".OptionActivities.PersonalInfo"
+            android:parentActivityName=".MainChatActivity" />
+
+    </application>
+
+</manifest>

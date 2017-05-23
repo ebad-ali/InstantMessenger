@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#039BE5</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#039BE5</color>
+
+    <color name="framcolor">#232b38</color>
+    <color name="outlineColor">#99abb5</color>
+    <color name="facebookbackgroud">#3B5998</color>
+    <color name="twitterbackgroud">#55ACEE</color>
+    <color name="googlebackgroud">#E02F2F</color>
+
+
+    <color name="colorPrimary2">#039BE5</color>
+    <color name="colorPrimaryDark2">#0288D1</color>
+    <color name="colorAccent2">#FFA000</color>
+
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_400">#BDBDBD</color>
+
+    <color name="mywhite">#f9f9f9</color>
+    <color name="myblack">#000</color>
+    <color name="mywhite2">#ffffff</color>
+
+    <color name="mytext">#373A4B</color>
+    <color name="mytext2">#A9ADC1</color>
+    <color name="mytext3">#fa0164</color>
+    <color name="mysubtext">#7A7D8E</color>
+
+
+    <color name="cornflower_blue">#6274e2</color>
+    <color name="cornflower_blue_dark">#303F9F</color>
+    <color name="cornflower_blue_darkest">#2d3a93</color>
+    <color name="gray">#ebebeb</color>
+    <color name="gray_light">#e8e8e8</color>
+    <color name="gray_transparent">#a6efefef</color>
+    <color name="gray_dark">#858585</color>
+    <color name="gray_dark_transparent">#ae858585</color>
+    <color name="gray_darkest">#ae282828</color>
+    <color name="black">#000000</color>
+    <color name="black_10">#19000000</color>
+    <color name="ivory">#f8efe6</color>
+    <color name="ivory_dark">#f7e8d9</color>
+    <color name="green">#38be55</color>
+    <color name="green_dark">#2da346</color>
+    <color name="red">#e94f4f</color>
+    <color name="brown">#4e342e</color>
+
+    <!-- 25aff3-->
+
+    <color name="messagerecievercolor">#87BEFF</color>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mywhite2">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        contentInsetLeft="72dp"
+        contentInsetStart="72dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme2"
+        app:contentInsetLeft="72dp"
+        app:contentInsetStart="72dp"
+        app:popupTheme="@style/AppTheme2">
+
+        <LinearLayout
+            android:id="@+id/search_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/search_view"
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="Search Username..."
+                android:imeOptions="actionSearch"
+                android:inputType="textNoSuggestions|textVisiblePassword"
+                android:maxLines="1"
+                android:paddingLeft="2dp"
+                android:textColor="@color/mywhite2"
+                android:textColorHint="@color/mywhite2" />
+
+            <com.andexert.library.RippleView
+                android:id="@+id/rippleView"
+                rv_centered="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:rv_color="@color/mywhite2"
+                app:rv_type="rectangle">
+
+                <ImageView
+                    android:id="@+id/search_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:src="@drawable/ic_close_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </com.andexert.library.RippleView>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ListView
+        android:id="@+id/searchListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar2"
+        android:background="@color/mywhite2" />
+
+
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mywhite2"
+    tools:context="innovate.ebad.com.instantmessenger.OptionActivities.YourChatSetting">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/yourChatSettingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"></android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rippleView"
+        rv_centered="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:rv_color="@color/grey_400"
+        app:rv_type="rectangle"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/appBarLayout"
+            android:background="@color/mywhite2">
+
+            <TextView
+                android:id="@+id/yourChatSettingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp"
+                android:text="Enter Key Send"
+                android:textColor="@color/mytext"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/yourChatSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/yourChatSettingTextView"
+                android:layout_marginBottom="14dp"
+                android:layout_marginRight="1dp"
+                android:checked="true"
+                android:padding="10dp"
+                android:theme="@style/SCBSwitch" />
+
+            <TextView
+                android:id="@+id/yourChatSettingTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="38dp"
+                android:paddingLeft="4dp"
+                android:text="Play  a sound when a message is recieved"
+                android:textColor="@color/mysubtext"
+                android:textSize="12sp"
+                android:layout_alignLeft="@+id/yourChatSettingTextView"
+                android:layout_alignStart="@+id/yourChatSettingTextView" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".4dp"
+                android:layout_below="@+id/yourChatSettingTextView2"
+                android:background="#C8C8C8" />
+        </RelativeLayout>
+
+    </com.andexert.library.RippleView>
+
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rippleView2"
+        rv_centered="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rippleView"
+        app:rv_color="@color/grey_400"
+        app:rv_type="rectangle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mywhite2">
+
+            <TextView
+                android:id="@+id/yourChatSettingBubbleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:padding="4dp"
+                android:text="Chat Bubble Color"
+                android:textColor="@color/mytext"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".4dp"
+                android:layout_below="@+id/yourChatSettingBubbleTextView"
+                android:background="#C8C8C8" />
+        </RelativeLayout>
+
+
+    </com.andexert.library.RippleView>
+
+
+</RelativeLayout>

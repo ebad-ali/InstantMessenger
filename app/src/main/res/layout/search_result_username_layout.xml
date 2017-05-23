@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mywhite2">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/SuccessPersonalInfoToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"></android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/appBarLayout"
+        android:background="@drawable/borderframe"
+        android:paddingTop="10dp">
+
+        <com.andexert.library.RippleView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            app:rv_color="@color/mywhite"
+            app:rv_type="simpleRipple">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/senderSuccessProfilePictureImageView"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/user"
+                app:civ_border_color="@color/mywhite"
+                app:civ_border_width="2dp" />
+
+        </com.andexert.library.RippleView>
+
+        <TextView
+            android:id="@+id/senderSuccessProfileNameTextview"
+            fontPath="fonts/Raleway-Medium.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/frameLayout"
+            android:layout_alignLeft="@+id/frameLayout"
+            android:layout_alignRight="@+id/frameLayout"
+            android:layout_alignStart="@+id/frameLayout"
+            android:layout_below="@+id/more"
+            android:gravity="center"
+            android:text="Muhammad Usman Aziz"
+            android:textColor="@color/mytext"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/senderSuccessProfileUsernameTextview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/senderSuccessProfileNameTextview"
+            android:layout_alignLeft="@+id/senderSuccessProfileNameTextview"
+            android:layout_alignRight="@+id/senderSuccessProfileNameTextview"
+            android:layout_alignStart="@+id/senderSuccessProfileNameTextview"
+            android:layout_below="@+id/senderSuccessProfileNameTextview"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="usmanaziz"
+            android:textColor="@color/mytext2"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".4dp"
+            android:layout_below="@+id/senderSuccessProfileUsernameTextview2"
+            android:background="#C8C8C8" />
+
+    </RelativeLayout>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rippleView"
+        rv_centered="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLayout"
+        app:rv_color="@color/grey_400"
+        app:rv_type="rectangle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/mywhite2">
+
+            <TextView
+                android:id="@+id/profileSettingIconTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Start Chatting"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:typeface="sans" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height=".4dp"
+                android:layout_alignLeft="@+id/profileSettingIconTextView2"
+                android:layout_below="@+id/profileSettingIconTextView2"
+                android:background="#C8C8C8" />
+
+
+        </RelativeLayout>
+
+    </com.andexert.library.RippleView>
+
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.andexert.library.RippleView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rippleView"
+    rv_centered="true"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    app:rv_color="@color/grey_400"
+    app:rv_type="rectangle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/mywhite2">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/friendProfilePictureImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/user"
+            app:civ_border_color="@color/mywhite"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/friendUserFullName"
+            fontPath="fonts/Raleway-Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@+id/friendProfilePictureImageView"
+            android:layout_toRightOf="@+id/friendProfilePictureImageView"
+            android:paddingLeft="12dp"
+            android:text="Ebad Ali"
+            android:textColor="@color/mytext"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/friendUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/friendUserFullName"
+            android:layout_toEndOf="@+id/friendProfilePictureImageView"
+            android:layout_toRightOf="@+id/friendProfilePictureImageView"
+            android:paddingLeft="12dp"
+            android:text="ebad.ali12"
+            android:textColor="@color/mytext2"
+            android:textSize="13sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".4dp"
+            android:layout_below="@+id/friendProfilePictureImageView"
+            android:background="#C8C8C8" />
+
+    </RelativeLayout>
+
+
+</com.andexert.library.RippleView>

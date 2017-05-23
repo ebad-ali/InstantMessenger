@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mywhite2">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mainProfileToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"></android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/appBarLayout"
+        android:background="@drawable/borderframe"
+        android:paddingTop="10dp">
+
+        <com.andexert.library.RippleView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            app:rv_color="@color/mywhite"
+            app:rv_type="simpleRipple">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profilePictureImageView"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:paddingBottom="10dp"
+                android:src="@drawable/user"
+                app:civ_border_color="@color/mywhite"
+                app:civ_border_width="2dp" />
+
+        </com.andexert.library.RippleView>
+
+        <TextView
+            android:id="@+id/profileNameTextview"
+            fontPath="fonts/Raleway-Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/more"
+            android:gravity="center"
+            android:text="Ebad Ali"
+            android:textColor="@color/mytext"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/profileUsernameTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/profileNameTextview"
+            android:layout_alignLeft="@+id/profileNameTextview"
+            android:layout_alignRight="@+id/profileNameTextview"
+            android:layout_alignStart="@+id/profileNameTextview"
+            android:layout_below="@+id/profileNameTextview"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="ebadali12"
+            android:textColor="@color/mytext2"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".4dp"
+            android:layout_below="@+id/profileUsernameTextview"
+            android:background="#C8C8C8" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/frameLayout">
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rippleView"
+            rv_centered="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appBarLayout"
+            app:rv_color="@color/grey_400"
+            app:rv_type="rectangle">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/mywhite2">
+
+                <ImageView
+                    android:id="@+id/settingIconImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/frameLayout"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="5dp"
+                    app:srcCompat="@drawable/ic_profile_icon" />
+
+                <TextView
+                    android:id="@+id/settingIconTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/settingIconImageView"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/settingIconImageView"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="9dp"
+                    android:layout_toEndOf="@+id/settingIconImageView"
+                    android:layout_toRightOf="@+id/settingIconImageView"
+                    android:paddingTop="8dp"
+                    android:text="Your Account"
+                    android:textColor="@color/mytext"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".4dp"
+                    android:layout_alignLeft="@+id/settingIconTextView"
+                    android:layout_below="@+id/settingIconTextView"
+                    android:background="#C8C8C8" />
+
+            </RelativeLayout>
+
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rippleView2"
+            rv_centered="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rippleView"
+            app:rv_color="@color/grey_400"
+            app:rv_type="rectangle">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/mywhite2">
+
+                <ImageView
+                    android:id="@+id/settingIconImageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/frameLayout"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="5dp"
+                    app:srcCompat="@drawable/ic_notification_icon" />
+
+                <TextView
+                    android:id="@+id/settingIconTextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/settingIconImageView2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/settingIconImageView2"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="9dp"
+                    android:layout_toEndOf="@+id/settingIconImageView2"
+                    android:layout_toRightOf="@+id/settingIconImageView2"
+                    android:paddingTop="8dp"
+                    android:text="Notifications"
+                    android:textColor="@color/mytext"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".4dp"
+                    android:layout_alignLeft="@+id/settingIconTextView2"
+                    android:layout_below="@+id/settingIconTextView2"
+                    android:background="#C8C8C8" />
+
+            </RelativeLayout>
+
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rippleView3"
+            rv_centered="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rippleView2"
+            app:rv_color="@color/grey_400"
+            app:rv_type="rectangle">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/mywhite2">
+
+                <ImageView
+                    android:id="@+id/settingIconImageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/frameLayout"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="5dp"
+                    app:srcCompat="@drawable/ic_chatsetting_icon" />
+
+                <TextView
+                    android:id="@+id/settingIconTextView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/settingIconImageView3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/settingIconImageView3"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="9dp"
+                    android:layout_toEndOf="@+id/settingIconImageView3"
+                    android:layout_toRightOf="@+id/settingIconImageView3"
+                    android:paddingTop="8dp"
+                    android:text="Chat Setting"
+                    android:textColor="@color/mytext"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".4dp"
+                    android:layout_alignLeft="@+id/settingIconTextView3"
+                    android:layout_below="@+id/settingIconTextView3"
+                    android:background="#C8C8C8" />
+
+            </RelativeLayout>
+
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rippleView4"
+            rv_centered="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rippleView3"
+            app:rv_color="@color/grey_400"
+            app:rv_type="rectangle">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/mywhite2">
+
+                <ImageView
+                    android:id="@+id/settingIconImageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/frameLayout"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="5dp"
+                    app:srcCompat="@drawable/ic_signout_icon" />
+
+                <TextView
+                    android:id="@+id/settingIconTextView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/settingIconImageView4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/settingIconImageView4"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="9dp"
+                    android:layout_toEndOf="@+id/settingIconImageView4"
+                    android:layout_toRightOf="@+id/settingIconImageView4"
+                    android:paddingTop="8dp"
+                    android:text="Log Out"
+                    android:textColor="@color/mytext"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".4dp"
+                    android:layout_alignLeft="@+id/settingIconTextView4"
+                    android:layout_below="@+id/settingIconTextView4"
+                    android:background="#C8C8C8" />
+
+            </RelativeLayout>
+
+        </com.andexert.library.RippleView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

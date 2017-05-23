@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mywhite2"
+    tools:context="innovate.ebad.com.instantmessenger.GetStartedActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/signInToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <Button
+        android:id="@+id/signInAButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorPrimary"
+        android:text="Sign In"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/emailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passwordTextview"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:textCursorDrawable="@color/colorPrimary" />
+
+
+    <EditText
+        android:id="@+id/passwordTextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/forgotPassword"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emailTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="29dp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/sign_in_building" />
+
+    <TextView
+        android:id="@+id/textView3"
+        fontPath="fonts/Raleway-Light.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        fontPath="fonts/Raleway-ExtraLight.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:text="@string/app_title"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <Button
+
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_above="@+id/signInAButton"
+        android:layout_alignEnd="@+id/passwordTextview"
+        android:layout_alignRight="@+id/passwordTextview"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="15dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:elevation="0dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+{
+  "project_info": {
+    "project_number": "207780671810",
+    "firebase_url": "https://instant-messenger-e778f.firebaseio.com",
+    "project_id": "instant-messenger-e778f",
+    "storage_bucket": "instant-messenger-e778f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207780671810:android:b2a6d9b353b7e813",
+        "android_client_info": {
+          "package_name": "innovate.ebad.com.instantmessenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207780671810-td16eipjovpkupib7js2oj3b6dtuctei.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "innovate.ebad.com.instantmessenger",
+            "certificate_hash": "338b3ac5ae367c44ab07f9214688552256bfdc44"
+          }
+        },
+        {
+          "client_id": "207780671810-keauvtl52da58pboapsbr8nt4r1ennsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUbH_jDCvh44Wzh2e8E4y_auNGtjPaX_0"
+        },
+        {
+          "current_key": "AIzaSyAafn_9pHPDvF6Y6s6isvnTfCDtguuxiTY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207780671810-keauvtl52da58pboapsbr8nt4r1ennsn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
